@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import './App.css';
+import   React,{  Component} from 'react';
 import Home from './page/home';
-import Room from './page/room';
+import Room  from './page/room';
 import SeulRoom from './page/seulRoom';
 import Erreur from './page/erreur';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from './navbar';
+import Data from './data';
+
+
 
 function App() {
   return (
     <div className="App">
-      
+      <>
       <Router>
       <Navbar/>
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/room" element={<Room />} />
-          <Route path="/erreur" element={<Erreur />} />
-          <Route path="/seulRoom" element={<SeulRoom />} />
-        </Routes>
+        <Switch>
+          <Route   path="/" exact  component={Home} />
+          <Route  path="/room" exact  component={Room } />
+          <Route  path="/erreur" exact component={Erreur } />
+          <Route  path="/room/:slug" exact component={SeulRoom } />
+
+        </Switch>
       </Router>
+      </>
     </div>
   );
 }

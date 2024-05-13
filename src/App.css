@@ -53,7 +53,7 @@ h6 {
   margin-bottom: 1.5em;
 }
 
-.btn-primary {
+.btttn-primary {
   display: inline-block;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
@@ -63,7 +63,12 @@ h6 {
   border: 3px solid var(--primaryColor);
   transition: var(--mainTransition);
   text-transform: uppercase;
+  left:550px;
+  top:75%;
+  margin: 4px 2px;
   cursor: pointer;
+  position: absolute;
+
 }
 .btn-primary:hover {
   background: transparent;
@@ -101,23 +106,35 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
-.nav-btn {
-  background: transparent;
-  border: none;
+.nav-bttn {
+ border: none;
+  color: white;
+  padding: 6px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  left:1000px;
+  top:11%;
+  margin: 4px 2px;
   cursor: pointer;
-  outline: none;
+  position: absolute;
 }
 .nav-icon {
   font-size: 1.5rem;
-  color: var(--primaryColor);
+  color: gray;
 }
-.nav-links {
-  height: 0;
+.nav-linkks {
+   height: 0;
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
+  position: relative;
+  top: -5px;
+  left: 680px;
+  transform: translate(40%, 30%);
 }
-.nav-links a {
+.nav-linkks a {
   display: block;
   text-decoration: none;
   padding: 1rem 0;
@@ -128,12 +145,12 @@ h6 {
   font-weight: 600;
   letter-spacing: var(--mainSpacing);
 }
-.nav-links a:hover {
+.nav-linkks a:hover {
   color: var(--primaryColor);
 }
 
 .show-nav {
-  height: 100px;
+  height: 120px;
 }
 @media screen and (min-width: 768px) {
   .nav-btn {
@@ -174,7 +191,7 @@ h6 {
   display: inline-block;
   background: rgba(0, 0, 0, 0.5);
   color: var(--mainWhite);
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
@@ -199,6 +216,7 @@ h6 {
   .banner h1 {
     font-size: 3rem;
   }
+  
 }
 @media screen and (min-width: 992px) {
   .banner {
