@@ -1,6 +1,9 @@
 Instructions d'installation
+-------------------
 git clone https://github.com/mohammed-adachi/ma_maison.git
+------------------------
 cd ma_maison
+------------
 Installation des dépendance
 npm install
 -----------------------------------------------------------
