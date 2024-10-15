@@ -11,6 +11,6 @@ Lancer
 npm start
 ----------------------------------------------------------
 Accédez à l'application:
-
+---------------
 Ouvrez votre navigateur et accédez à http://localhost:3000
 
