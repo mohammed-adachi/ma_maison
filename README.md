@@ -1,12 +1,13 @@
-Créez  un project un ma_maison
----
-npx create-react-app un ma_maison
----
-Naviguez vers le répertoire du projet
----
-cd un ma_maison
----
-Démarrez l'application
----
+Instructions d'installation
+git clone https://github.com/mohammed-adachi/ma_maison.git
+cd ma_maison
+Installation des dépendance
+npm install
+-----------------------------------------------------------
+Lancer
 npm start
----
+----------------------------------------------------------
+Accédez à l'application:
+
+Ouvrez votre navigateur et accédez à http://localhost:3000
+
